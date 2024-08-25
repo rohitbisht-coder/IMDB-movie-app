@@ -1,0 +1,38 @@
+body {
+  background: black;
+}
+.home {
+  margin-top: 20px;
+}
+
+.carosoul_img {
+  height: auto;
+}
+
+.position_overlay {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  font-size: 20px;
+  color: white;
+}
+
+.active {
+  border-bottom: 3px solid black;
+}
+
+@media (max-width: 800px) {
+  .position_overlay {
+    bottom: 10px;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  h3 {
+    font-size: 15px;
+    margin: 0;
+  }
+}

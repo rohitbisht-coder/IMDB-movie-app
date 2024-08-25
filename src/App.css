@@ -1,0 +1,88 @@
+.body {
+  background-color: black;
+}
+
+.heading {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.Error_conatainer {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.Error_conatainer img {
+  height: 500px;
+}
+
+@media (max-width: 990px) {
+  .heading {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .Error_conatainer img {
+    height: 300px;
+  }
+  .Error_conatainer {
+    margin: 100px auto;
+  }
+}
+
+.con {
+  height: 20vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.34);
+  display: grid;
+  place-items: center;
+}
+
+.trending {
+  color: transparent;
+
+  position: relative;
+}
+.trending::before {
+  content: "Trending";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-right: 3px solid white;
+  color: white;
+  animation: slide 3s linear infinite;
+  overflow: hidden;
+}
+.upcoming {
+  color: transparent;
+
+  position: relative;
+}
+.upcoming::before {
+  content: "Upcoming";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-right: 3px solid white;
+  color: white;
+  animation: slide 3s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
